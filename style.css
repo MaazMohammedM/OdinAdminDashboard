@@ -1,0 +1,127 @@
+
+:root{
+    --font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    background-color: rgb(208, 208, 208);
+    min-height: 100svh;
+    font-family: var(--font-family);
+}
+
+aside.leftAside{
+    background-color: rgb(0, 132, 181);
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.leftAside .navs{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.navs li {
+    font-size: 0.85rem;
+}
+
+.navs  > li:nth-child(6){
+    margin-bottom: 2rem;
+}
+
+.leftAside .navs > li{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.75rem;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+.navs > li > svg{
+    width: 1.5rem;
+   fill: white;
+}
+
+.logo{
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo > img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.logo > p{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+}
+
+.container{
+    background-color: lavenderblush;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 9fr;
+}
+header{
+    background-color: white;
+    box-shadow: 0px 4px 2px rgba(255, 255, 255, 0.50);
+}
+
+header nav{
+    background-color: lemonchiffon;
+    padding: 1rem;
+}
+
+.content{
+   display: grid;
+   grid-template-columns: 7fr 3fr;
+   background-color: yellow;
+}
+
+.contentGrid{
+    background-color: tomato;
+}
+
+.contentGridLayout{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 1rem;
+}
+
+.contentGridLayout > div{
+    background-color: khaki;
+    padding: 1rem;
+}
+
+.contentAside{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+}
+
+.contentAside .contentA{
+    background-color: lavenderblush;
+}
+.contentAside .contentT{
+    background-color: orangered;
+}
+
+
